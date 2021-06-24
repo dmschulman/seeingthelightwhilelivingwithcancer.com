@@ -26,7 +26,7 @@ html {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.7rem;
   font-family: 'PT Serif', Verdana, serif;
   font-weight: 500;
   color: #fff; 
@@ -49,6 +49,7 @@ h3 {
   letter-spacing: 7px;
   text-transform: uppercase;
   color: #202020;
+  margin: 2rem 0 1rem 0;
 }
 
 p {
@@ -124,7 +125,7 @@ a:focus {
 #about .block,
 #outreach .block,
 #purchase .block {
-  padding: 2rem 0;
+  padding: 2rem;
   background-color: #fff;
 }
 
@@ -161,7 +162,7 @@ footer {
 
 #about {
   background-image: url(https://images.unsplash.com/photo-1534996858221-380b92700493?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
-  background-position: bottom center;
+  background-position: center;
   background-color: #214f8d;
   /* background-image: url(https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg); */
   /* background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg); */
@@ -178,15 +179,13 @@ footer {
 
 #purchase {
   background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg);
-  background-position: bottom center;
   background-color: #fe9251;
 }
 
 footer {
-  padding: 400px 0 1rem 0;
+  padding: 500px 0 1rem 0;
   /* background-image: url(https://images.pexels.com/photos/3903948/pexels-photo-3903948.jpeg); */
   background-image: url(https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg);
-  background-position: 20% 70%;
   background-color: #6b5b65;
 }
 
@@ -329,12 +328,15 @@ p.dropcap:first-of-type:first-letter {
 }
 
 .profile {
-  padding: 0 2rem;
   width: 100%;
 }
 
-.profile h3 {
-  margin-bottom: 1rem;
+.profile:nth-child(odd) {
+  padding-right: 1rem;
+}
+
+.profile:nth-child(even) {
+  padding-left: 1rem;
 }
 
 .profile img {
@@ -342,8 +344,7 @@ p.dropcap:first-of-type:first-letter {
   padding: 3px 2rem 2rem 0;
 }
 
-#outreach .block p,
-#outreach .block h3 {
+#outreach .block p {
   margin-bottom: 1rem;
 }
 
