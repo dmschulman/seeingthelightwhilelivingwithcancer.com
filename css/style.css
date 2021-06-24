@@ -31,7 +31,7 @@ h1 {
   font-weight: 500;
   color: #fff; 
   padding: 0; 
-  margin: 0 0 100px 0;
+  margin: 0 3rem 100px 3rem;
   text-align: center;
 }
 
@@ -98,9 +98,9 @@ a:focus {
   -webkit-align-content: stretch;
   -ms-flex-line-pack: stretch;
   align-content: stretch;
-  -webkit-align-items: flex-start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-align-items: center; /* flex-start */
+  -ms-flex-align: center; /* start */
+  align-items: center; /* flex-start */
 }
 
 .wrapper .block {
@@ -266,6 +266,10 @@ header ul li a:focus:after {
 /* MAIN */
 #intro .flex-row > * {
   box-shadow: 7px 7px 20px 13px #696969;
+}
+
+#intro .cover {
+  margin-left: 2rem;
 }
 
 #intro blockquote {
