@@ -1,0 +1,388 @@
+/* RESET */
+* {box-sizing: border-box}
+body { margin: 0 }
+h1, h2, h3, h4, h5, h6 { font-weight: normal }
+table { border-collapse: collapse; border-spacing: 0 }
+th, td { text-align: left; vertical-align: top }
+img, iframe { border: 0 }
+
+/* GLOBALS */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-size: 1rem;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'PT Serif', Verdana, serif;
+  font-weight: 500;
+  color: #fff; 
+  padding: 0; 
+  margin: 0 0 100px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'PT Serif', Verdana, serif;
+  text-align: center;
+  color: #202020;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.4rem; 
+  font-weight: 400;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #202020;
+}
+
+p {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: -.6px;
+  color: #202020;
+}
+
+a {
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+  font-weight: bold;
+  color: #202020;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
+  color: #666;
+}
+
+/* STRUCTURE */
+.flex-row {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.wrapper .block {
+  margin: 0 auto;
+}
+
+#intro .space,
+#about .flex-row,
+#purchase .flex-row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+#book .block,
+#outro .block {
+  max-width: 800px;
+  padding: 0 2rem 2rem 2rem;
+  background-color: #fff;
+}
+
+#about .block,
+#outreach .block,
+#purchase .block {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+#outreach .block > *,
+#purchase .block p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* PARALLAX */
+#intro,
+#about,
+#outreach,
+#purchase,
+footer {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#intro {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  /* background-image: url(https://cdn.eso.org/images/publicationjpg/potw1938a.jpg); */
+  background-image: url(https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80);
+  background-color: #050505;
+}
+
+#about {
+  background-image: url(https://images.unsplash.com/photo-1534996858221-380b92700493?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-position: bottom center;
+  background-color: #214f8d;
+  /* background-image: url(https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg); */
+  /* background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg); */
+  /* background-image: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) */
+  /* background-image: url(https://images.pexels.com/photos/325117/pexels-photo-325117.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); */
+}
+
+#outreach {
+  background-image: url(https://images.pexels.com/photos/2909077/pexels-photo-2909077.jpeg);
+  background-color: #b89c99;
+  /* background-image: url(https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg); */
+  /* background-image: url(https://images.pexels.com/photos/325117/pexels-photo-325117.jpeg); */
+}
+
+#purchase {
+  background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg);
+  background-position: bottom center;
+  background-color: #fe9251;
+}
+
+footer {
+  padding: 400px 0 1rem 0;
+  /* background-image: url(https://images.pexels.com/photos/3903948/pexels-photo-3903948.jpeg); */
+  background-image: url(https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg);
+  background-position: 20% 70%;
+  background-color: #6b5b65;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: -30px; /* Equal to the height difference between header-outer and header-inner */
+  height: 90px;
+  z-index: 999;
+  background-color:rgba(255, 255, 255, 0.6);
+}
+
+header nav {
+  position: sticky;
+  height: 60px;
+  top: 0;
+  padding: 20px 0;
+  z-index: 999;
+  background-color:rgba(255, 255, 255, 0.6);
+  display: block;
+  width: 100%;
+}
+
+header ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+header ul li {
+  display: inline;
+  padding: 1rem 2rem;
+}
+
+header ul li a {
+  font-weight: 700;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1;
+  text-decoration: none;
+  color: #202020;
+  position: relative;
+  padding: 0;
+}
+
+header ul li a:hover,
+header ul li a:focus {
+  text-decoration: none;
+  color: #202020;
+}
+
+header ul li a:after {
+  opacity 0;
+  transform: scale(0);
+  transform-origin: center;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #202020;
+  transition: opacity 300ms, transform 300ms;
+}
+
+header ul li a:hover:after,
+header ul li a:focus:after {
+  transform: scale(1);
+  opacity: 1;
+  transform: translate3d(0, 0.1em, 0);
+}
+  
+/* MAIN */
+#intro .flex-row > * {
+  box-shadow: 7px 7px 20px 13px #696969;
+}
+
+#intro blockquote {
+  margin-top: 3rem;
+  background-color: rgba(255,165,0,.8);
+  max-width: 600px;
+  padding: 2rem;
+  -webkit-box-shadow: 13px 13px 20px 5px rgba(0,0,0,0.6); 
+  box-shadow: 13px 13px 20px 5px rgba(0,0,0,0.6);
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: #fff;
+  letter-spacing: -.7px;
+  font-style: italic;
+  position: relative;
+  text-indent: 3rem;
+  font-family: 'PT Serif', Verdana, serif;
+}
+
+#intro blockquote:before,
+#intro blockquote:after {
+  font-size: 4.5rem;
+  line-height: 0;
+  vertical-align: middle;
+  font-family: cursive;
+  color: #fff;
+}
+
+#intro blockquote:before {
+  content: open-quote;
+  position: absolute;
+  top: 3.5rem;
+  left: -.8rem;
+}
+
+#intro blockquote:after {
+  content: close-quote;
+}
+
+#book p {
+  text-align: justify;
+}
+
+p.dropcap:first-of-type:first-letter {
+  font-weight: 400;
+  float: left;
+  font-size: 5rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+
+#about h2,
+#outreach h2,
+#purchase h2 {
+  padding: 110px 0;
+  color: #fff;
+}
+
+.profile {
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.profile h3 {
+  margin-bottom: 1rem;
+}
+
+.profile img {
+  float: left;
+  padding: 3px 2rem 2rem 0;
+}
+
+#outreach .block p,
+#outreach .block h3 {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer .block {
+  background-color: transparent;
+}
+
+footer .block span,
+footer .block p {
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+  background-color: transparent;
+  text-align: center;
+  display: block;
+}
+
+footer .block a {
+  color: #fff;
+}
+
+
+/* BREAKPOINTS */
+@media screen and (min-width: 959px) {
+  .flex-row {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 958px) {
+  
+  #intro .flex-row img {
+    order: 0;
+    width: 85%;
+    max-width: 400px;
+    margin: 3rem auto;
+  }
+  
+  #intro .flex-row aside {
+    margin: 0 auto;
+  }
+}
