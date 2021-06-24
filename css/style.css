@@ -49,7 +49,7 @@ h3 {
   letter-spacing: 7px;
   text-transform: uppercase;
   color: #202020;
-  margin: 2rem 0 1rem 0;
+  margin: 3rem 0 1rem 0;
 }
 
 p {
@@ -111,21 +111,6 @@ a:focus {
 
 #about .flex-row,
 #purchase .flex-row {
-  /* display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: space-around;
-  justify-content: space-around;
-  -webkit-align-content: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch; */
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -156,8 +141,13 @@ a:focus {
   background-color: #fff;
 }
 
-#outreach .block > *,
+#outreach .block p,
 #purchase .block p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#outreach .block h3 {
   max-width: 800px;
 }
 
