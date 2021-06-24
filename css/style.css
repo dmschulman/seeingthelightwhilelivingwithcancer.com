@@ -61,6 +61,11 @@ p {
   color: #202020;
 }
 
+p img {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+
 a {
   -webkit-transition: color 0.2s ease-in;
   -moz-transition: color 0.2s ease-in;
