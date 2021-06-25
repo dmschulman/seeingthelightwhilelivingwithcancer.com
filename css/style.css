@@ -169,37 +169,28 @@ footer {
 
 #intro {
   background-image: url(/img/space-1600.webp);
-  /* background-image: url(https://cdn.eso.org/images/publicationjpg/potw1938a.jpg); */
-  /* background-image: url(https://images.unsplash.com/photo-1518066000714-58c45f1a2c0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80); */
   background-color: #050505;
 }
 
 #about {
-  background-image: url(https://images.unsplash.com/photo-1534996858221-380b92700493?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+  background-image: url(/img/atmosphere-1600.webp);
   background-position: center;
   background-color: #214f8d;
-  /* background-image: url(https://images.pexels.com/photos/71116/hurricane-earth-satellite-tracking-71116.jpeg); */
-  /* background-image: url(https://images.pexels.com/photos/5439/earth-space.jpg); */
-  /* background-image: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) */
-  /* background-image: url(https://images.pexels.com/photos/325117/pexels-photo-325117.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); */
 }
 
 #outreach {
-  background-image: url(https://images.pexels.com/photos/2909077/pexels-photo-2909077.jpeg);
+  background-image: url(/img/clouds-1600.webp);
   background-color: #b89c99;
-  /* background-image: url(https://images.pexels.com/photos/158163/clouds-cloudporn-weather-lookup-158163.jpeg); */
-  /* background-image: url(https://images.pexels.com/photos/325117/pexels-photo-325117.jpeg); */
 }
 
 #purchase {
-  background-image: url(https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg);
+  background-image: url(/img/sunset-1600.webp);
   background-color: #fe9251;
 }
 
 footer {
   padding: 500px 0 1rem 0;
-  /* background-image: url(https://images.pexels.com/photos/3903948/pexels-photo-3903948.jpeg); */
-  background-image: url(https://images.pexels.com/photos/1567069/pexels-photo-1567069.jpeg);
+  background-image: url(/img/stars-1600.webp);
   background-color: #6b5b65;
 }
 
