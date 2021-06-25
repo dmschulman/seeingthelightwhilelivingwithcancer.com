@@ -26,7 +26,6 @@ html {
 }
 
 h1 {
-  font-size: 3.7rem;
   font-family: 'PT Serif', Verdana, serif;
   font-weight: 500;
   color: #fff; 
@@ -375,6 +374,7 @@ footer .block a {
   
   h1 {
     margin: 0 3rem 100px 3rem;
+    font-size: 3.7rem;
   }
   
   #intro {
@@ -395,6 +395,7 @@ footer .block a {
   
   h1 {
     margin: 0 3rem 40px 3rem;
+    font-size: 3.1rem;
   }
   
   #intro {
