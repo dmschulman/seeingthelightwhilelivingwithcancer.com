@@ -1,0 +1,19 @@
+{
+    "name": "Seeing The Light",
+    "short_name": "Seeing The Light",
+    "icons": [
+        {
+            "src": "/img/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#050608",
+    "background_color": "#050608",
+    "display": "standalone"
+}
