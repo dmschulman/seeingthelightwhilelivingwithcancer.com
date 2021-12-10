@@ -143,7 +143,8 @@ a:focus {
 
 #outreach .block p,
 #purchase .block p,
-#press .block p {
+#press .block p,
+#press .block ul {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -352,6 +353,15 @@ p.dropcap:first-of-type:first-letter {
 
 #outreach .block p {
   margin-bottom: 1rem;
+}
+
+#press li {
+  margin-bottom: 1rem;
+}
+
+#press li a {
+  display: block;
+  font-size: 1.3rem;
 }
 
 /* FOOTER */
