@@ -195,6 +195,7 @@ footer {
 
 #press {
   background-image: url(/img/valley-1600.webp);
+  background-position: top;
   background-color: #c33e0c;
 }
 
