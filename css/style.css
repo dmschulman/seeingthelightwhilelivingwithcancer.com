@@ -50,7 +50,8 @@ h3 {
   margin: 3rem auto 1rem auto;
 }
 
-p {
+p,
+li {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -134,18 +135,21 @@ a:focus {
 
 #about .block,
 #outreach .block,
-#purchase .block {
+#purchase .block,
+#press .block {
   padding: 2rem;
   background-color: #fff;
 }
 
 #outreach .block p,
-#purchase .block p {
+#purchase .block p,
+#press .block p {
   max-width: 800px;
   margin: 0 auto;
 }
 
-#outreach .block h3 {
+#outreach .block h3,
+#press .block h3 {
   max-width: 800px;
 }
 
@@ -154,6 +158,7 @@ a:focus {
 #about,
 #outreach,
 #purchase,
+#press,
 footer {
   overflow: hidden;
   position: relative;
@@ -185,6 +190,11 @@ footer {
 #purchase {
   background-image: url(/img/sunset-1600.webp);
   background-color: #fe9251;
+}
+
+#press {
+  background-image: url(/img/valley-1600.webp);
+  background-color: #c33e0c;
 }
 
 footer {
@@ -325,7 +335,8 @@ p.dropcap:first-of-type:first-letter {
 
 #about h2,
 #outreach h2,
-#purchase h2 {
+#purchase h2,
+#press h2 {
   padding: 110px 0;
   color: #fff;
 }
